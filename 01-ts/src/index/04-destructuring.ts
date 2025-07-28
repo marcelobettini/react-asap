@@ -88,7 +88,9 @@ const sortedMovies = diCaprioMovies.toSorted((a, b) => a.year - b.year)
 //spread operator
 const [firstMovie, secondMovie, ...rest] = sortedMovies
 console.log(firstMovie, secondMovie)
+
 console.log(rest)
+
 const actors: Actor[] = [actor01, actor02, actor03]
 
 //for of sin desesctructurar las props
