@@ -1,0 +1,8 @@
+.client-card {
+    background-color: #974242;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: left;
+    list-style: none;
+}

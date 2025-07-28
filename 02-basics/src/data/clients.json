@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Coca Cola",
+        "email": "cocacola@coke.com",
+        "phone": "123456789"
+    },
+    {
+        "id": 2,
+        "name": "Microsoft",
+        "email": "contact@microsoft.com",
+        "phone": "987654321"
+    },
+    {
+        "id": 3,
+        "name": "Amazon",
+        "email": "support@amazon.com",
+        "phone": "5551234567"
+    },
+    {
+        "id": 4,
+        "name": "Tesla",
+        "email": "info@tesla.com",
+        "phone": "8885559999"
+    },
+    {
+        "id": 5,
+        "name": "Nike",
+        "email": "help@nike.com",
+        "phone": "7778881234"
+    },
+    {
+        "id": 6,
+        "name": "Apple",
+        "email": "customerservice@apple.com",
+        "phone": "8006927753"
+    },
+    {
+        "id": 7,
+        "name": "Samsung",
+        "email": "inquiry@samsung.com",
+        "phone": "8007267864"
+    },
+    {
+        "id": 8,
+        "name": "Sony",
+        "email": "contact@sony.com",
+        "phone": "2398583900"
+    },
+    {
+        "id": 9,
+        "name": "Walmart",
+        "email": "service@walmart.com",
+        "phone": "8009256278"
+    },
+    {
+        "id": 10,
+        "name": "Toyota",
+        "email": "customer_support@toyota.com",
+        "phone": "8003314331"
+    }
+]
