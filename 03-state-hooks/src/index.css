@@ -1,0 +1,33 @@
+.container {
+  margin-bottom: 2em;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  padding: 4rem;
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+
+  & button {
+    width: 120px;
+    height: 40px;
+    font-size: 1.6rem;
+  }
+
+  & button:hover:disabled {
+    background-color: lightgray;
+    color: darkgray;
+    border: none;
+    cursor: not-allowed;
+  }
+}
+
+input {
+  height: 40px;
+  width: 70px;
+  font-size: 1.6rem;
+}
