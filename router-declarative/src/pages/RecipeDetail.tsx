@@ -1,42 +1,44 @@
 
-import { useParams } from "react-router"
+import { Link, useParams } from "react-router"
 import type { Recipe } from "../types"
 import './RecipeDetail.css'
 import useFetch from "../hooks/useFetch"
+import useSEO from "../hooks/useSEO"
 export default function RecipeDetail() {
     const { id } = useParams()
-    const { recipes, loading, error } = useFetch('/recipes/' + id)
+    const { data, loading, error } = useFetch<Recipe>('/recipes/' + id)
+    useSEO({ title: data?.name, tags: data?.mealType.join(", ") })
 
     if (loading) return <h3>Loading...</h3>
     if (error) return <h3>{error}</h3>
     return (
         <>
-            {JSON.stringify(recipes)}
-            {recipes.length &&
+            {data &&
                 <div>
-                    <p style={{ marginBottom: 0, fontStyle: 'italic', color: 'hotpink' }}>{recipes[0].mealType.join(", ")}</p>
-                    <h2 style={{ marginTop: 0, color: 'pink' }}>{recipes[0].name}</h2>
-                    <span>{recipes[0].cuisine} cuisine</span>
+                    <Link to={'/recipes'}><small>⬅️ back</small></Link>
+                    <p style={{ marginBottom: 0, fontStyle: 'italic', color: 'hotpink' }}>{data.mealType.join(", ")}</p>
+                    <h2 style={{ marginTop: 0, color: 'pink' }}>{data.name}</h2>
+                    <span>{data.cuisine} cuisine</span>
                     <hr style={{ marginTop: 0, border: 'none', height: '1px', backgroundColor: 'gray' }} />
-                    <p>Rating: {recipes[0].rating} ⭐️</p>
-                    <p>Difficulty: {recipes[0].difficulty}</p>
-                    <p>Preparation Time: {recipes[0].prepTimeMinutes} ⌛️</p>
-                    <p>Cooking Time: {recipes[0].cookTimeMinutes} ⏰</p>
-                    <p>Servings: {recipes[0].servings} 🍽️</p>
+                    <p>Rating: {data.rating} ⭐️</p>
+                    <p>Difficulty: {data.difficulty}</p>
+                    <p>Preparation Time: {data.prepTimeMinutes} ⌛️</p>
+                    <p>Cooking Time: {data.cookTimeMinutes} ⏰</p>
+                    <p>Servings: {data.servings} 🍽️</p>
                     {/* style img tag with aspect ratio to avoid layout shifting */}
-                    <img src={recipes[0].image} alt={recipes[0].name} className='img-detail'
+                    <img src={data.image} alt={data.name} className='img-detail'
                     />
                     <hr style={{ border: 'none', height: '1px', backgroundColor: 'gray' }} />
                     <h3>Ingredients:</h3>
                     <ul>
-                        {recipes[0].ingredients?.map((ingredient, index) => (
+                        {data.ingredients?.map((ingredient, index) => (
                             <li key={index}>{ingredient}</li>
                         ))}
                     </ul>
                     <hr style={{ border: 'none', height: '1px', backgroundColor: 'gray' }} />
                     <h3>Instructions:</h3>
                     <ul>
-                        {recipes[0].instructions?.map((step, index) => (
+                        {data.instructions?.map((step, index) => (
                             <li key={index}>{step}</li>
                         ))}
                     </ul>

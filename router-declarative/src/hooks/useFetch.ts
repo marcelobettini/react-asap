@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react"
-import type { Recipe } from "../types"
 
 const BASEURL = "https://67f95738094de2fe6ea13bdf.mockapi.io/api/v1/"
-export default function useFetch(endpoint: string) {
-    const [recipes, setRecipes] = useState<Recipe[]>([])
+export default function useFetch<T>(endpoint: string) {
+    const [data, setData] = useState<T | null>(null)
     const [loading, setLoading] = useState<boolean>(true)
     const [error, setError] = useState<string | null>(null)
 
@@ -15,7 +14,7 @@ export default function useFetch(endpoint: string) {
                 return res.json()
             })
             .then((data) => {
-                setRecipes(data)
+                setData(data)
             })
             .catch(err => {
                 setError(err.message)
@@ -26,5 +25,5 @@ export default function useFetch(endpoint: string) {
             })
         return () => { console.log("Acá va la cleanup function") }
     }, [])
-    return { recipes, loading, error }
+    return { data, loading, error }
 }
