@@ -9,7 +9,7 @@ import { useState } from 'react'
 import InstantSearch from '../components/InstantSearch'
 
 export default function Recipes() {
-    useSEO({ title: "Recipes | RecipesApp" })
+    useSEO({ title: "RecipesApp | Recipes" })
     const { data, loading, error } = useFetch<Recipe[]>('/recipes')
     const [searchTerm, setSearchTerm] = useState("")
 
