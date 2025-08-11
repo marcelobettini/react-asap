@@ -6,7 +6,7 @@ type Props = {
 function InstantSearch({ onSearch }: Props) {
     const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
         const query = e.target.value
-        if (!query) return
+        // if (!query) return 😉 ojo con el copy and paste
         onSearch(query)
     }
 
