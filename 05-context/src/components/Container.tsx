@@ -2,7 +2,6 @@ import { Header } from "./Header"
 import { OtherStuff } from "./OtherStuff"
 import Test from "./Test"
 
-
 export const Container = () => {
   return (
     <section className="container line-pad">

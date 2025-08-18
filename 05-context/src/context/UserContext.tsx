@@ -14,6 +14,7 @@ export const UserContext = createContext<UserContextType>({
     reset: () => { }
 })
 
+
 export const UserContextProvider = ({ children }: { children: ReactNode }) => {
     const [user, setUser] = useState<User>(initValue)
     const reset = () => setUser(initValue)
