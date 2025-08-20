@@ -33,5 +33,4 @@ export const counterReducer = (state: CounterState, action: CounterAction) => {
         default:
             return state
     }
-
 }
