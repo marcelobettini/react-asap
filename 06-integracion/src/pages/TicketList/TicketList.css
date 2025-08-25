@@ -1,0 +1,15 @@
+.ticket-table {
+    margin: auto;
+    width: 70%;
+    min-width: 450px;
+    padding: .5em;
+}
+
+.ticket-table thead {
+    background-color: var(--bg-tertiary);
+}
+
+.ticket-table th,
+.ticket-table td {
+    padding: .5em;
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "id": "9f05c4d3-bc55-42cb-9946-e78bb5d2f8e1",
+        "producto": "Ventas Pro",
+        "descripcion": "Error al generar reportes en el módulo de ventas",
+        "estado": "Abierto",
+        "notaCierre": null,
+        "fechaCreacion": "2025-08-01T10:15:00Z",
+        "fechaUltimaActualizacion": "2025-08-01T10:15:00Z",
+        "usuario": "María López",
+        "email": "maria.lopez@example.com",
+        "telefono": "011-1234-5678"
+    },
+    {
+        "id": "2cd06bb2-bb77-4023-9a71-0e4ab4af55a4",
+        "producto": "Gestor Contable",
+        "descripcion": "El sistema se congela al cargar clientes nuevos",
+        "estado": "En progreso",
+        "notaCierre": null,
+        "fechaCreacion": "2025-08-03T14:30:00Z",
+        "fechaUltimaActualizacion": "2025-08-04T09:45:00Z",
+        "usuario": "Juan Pérez",
+        "email": "juan.perez@example.com",
+        "telefono": "011-1234-5678"
+    },
+    {
+        "id": "b8a4b9e5-37bb-4f53-bfd5-1dc19f7b3927",
+        "producto": "CRM Plus",
+        "descripcion": "Problema con integración de pagos en línea",
+        "estado": "Pendiente",
+        "notaCierre": null,
+        "fechaCreacion": "2025-08-05T08:00:00Z",
+        "fechaUltimaActualizacion": "2025-08-05T08:00:00Z",
+        "usuario": "Carlos Ramírez",
+        "email": "carlos.ramirez@example.com",
+        "telefono": "0239-234-5678"
+    },
+    {
+        "id": "ff7d6baf-4639-4e62-89cb-1b90f8503d74",
+        "producto": "CRM Plus",
+        "descripcion": "Panel de control no carga estadísticas",
+        "estado": "Resuelto",
+        "notaCierre": "Se actualizó el módulo de análisis",
+        "fechaCreacion": "2025-07-28T16:00:00Z",
+        "fechaUltimaActualizacion": "2025-08-02T11:20:00Z",
+        "usuario": "Ana Torres",
+        "email": "ana.torres@example.com",
+        "telefono": "0249-447-0091"
+    }
+]

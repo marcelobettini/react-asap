@@ -1,0 +1,38 @@
+.new-ticket-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+}
+
+.new-ticket-form {
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    width: 600px;
+
+    & textarea {
+        height: 4rem;
+        resize: none;
+    }
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.error {
+    color: var(--error-color);
+}
+
+@media screen and (width < 700px) {
+    .new-ticket-form {
+        width: 86%;
+    }
+
+}

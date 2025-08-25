@@ -1,0 +1,10 @@
+.ticket-row {
+
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--bg-secondary);
+        color: var(--text-secondary);
+    }
+
+}
